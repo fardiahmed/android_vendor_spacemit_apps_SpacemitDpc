@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">SpacemiT Device Owner</string>
+    <string name="admin_label">SpacemiT Device Owner</string>
+    <string name="admin_desc">Manages this device as its owner.</string>
+</resources>

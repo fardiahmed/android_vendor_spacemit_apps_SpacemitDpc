@@ -1,0 +1,16 @@
+// SpacemiT appliance DPC: becomes device owner automatically on first boot via
+// DevicePolicyManager.provisionFullyManagedDevice (@SystemApi -> platform_apis).
+// Platform-signed so it holds MANAGE_PROFILE_AND_DEVICE_OWNERS by signature.
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "SpacemitDpc",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+}
